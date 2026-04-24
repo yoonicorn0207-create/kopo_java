@@ -1,0 +1,9 @@
+package com.kopo.java_0424;
+
+public class FileReadWriteEx {
+
+	public static void main(String[] args) {
+
+	}// main
+
+}// CLASS

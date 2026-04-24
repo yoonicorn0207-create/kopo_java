@@ -1,0 +1,18 @@
+package com.kopo.kangseo_0421;
+
+import java.util.Stack;
+
+public class StackFixEx {
+
+	public static void main(String[] args) {
+		Stack<String> st = new Stack<>();
+		st.push("A"); // 1st in
+		st.push("B"); // 2nd in
+		st.push("C"); // 3rd in (Last in)
+		String top = st.peek(); // "C" (삭제하지 않고 확인)
+		while (!st.isEmpty()) {
+			System.out.println(st.pop());
+		} // 출력 순서: C -> B -> A  성능이
+	}// main
+
+}// CLASS

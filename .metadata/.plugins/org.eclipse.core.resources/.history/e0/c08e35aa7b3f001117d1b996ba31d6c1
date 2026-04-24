@@ -1,0 +1,43 @@
+package com.kopo.java_0424;
+
+class User {
+	String id;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public User(String id) {
+		super();
+		this.id = id;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) {
+			System.out.println("this == o");
+			return true;
+		}
+
+		return false;
+	}
+
+}
+
+public class HashCode {
+
+	public static void main(String[] args) {
+
+		User a = new User("hfds123");
+		User b = new User("knis123");
+
+		System.out.println(a.equals(a));
+		System.out.println(a.getId());
+
+	}// main
+
+}// CLASS

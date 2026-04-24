@@ -1,0 +1,23 @@
+rwaHNRfwueaHFiueklwahniufilewaHFeuwil
+
+
+java.io.FileNotFoundException: in.bin (지정된 파일을 찾을 수 없습니다)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at com.kopo.java_0424.FileReadWriteEx.main(FileReadWriteEx.java:13)
+	
+	java.io.FileNotFoundException: in.bin (지정된 파일을 찾을 수 없습니다)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at com.kopo.java_0424.FileReadWriteEx.main(FileReadWriteEx.java:13)
+	
+	java.io.FileNotFoundException: in.bin (지정된 파일을 찾을 수 없습니다)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at com.kopo.java_0424.FileReadWriteEx.main(FileReadWriteEx.java:13)

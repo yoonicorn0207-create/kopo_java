@@ -1,0 +1,44 @@
+package com.kopo.java_0424;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.RandomAccessFile;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+public class FileReadWriteEx3 {
+
+	public static void main(String[] args) throws IOException {
+
+		InputStream in = new FileInputStream("./src/in.txt");
+		OutputStream out = new FileOutputStream("./src/out.txt");
+		byte[] buf = new byte[8192]; // 8KB 버퍼 사용
+		int len;
+		while ((len = in.read(buf)) != -1) { // 데이터 읽기
+			out.write(buf, 0, len); // 읽은 만큼 쓰기
+		}
+
+		 // 👉 추가할 문자열
+        String extra = "\n=== 추가된 문자열입니다 ===\n";
+
+        // 👉 문자열을 바이트로 변환 후 쓰기
+        out.write(extra.getBytes());
+        
+        RandomAccessFile raf = new RandomAccessFile("./src/out.txt", "rw");
+        raf.seek(12);
+        
+        raf.write("HEssLLO11111".getBytes());
+        
+		in.close();
+		out.close();
+		raf.close();
+
+	}// main
+
+}// CLASS

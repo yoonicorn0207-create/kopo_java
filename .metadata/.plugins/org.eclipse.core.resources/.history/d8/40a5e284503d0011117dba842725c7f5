@@ -1,0 +1,91 @@
+package com.kopo.kangseo_0421;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+class Student {
+	private String name;
+	private int age;
+
+	public Student(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+}// Student
+
+//---------------------------------------------------------------------
+
+public class CollectionEx2 {
+
+	
+	public static String randomName() {
+        String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        Random rand = new Random();
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < 3; i++) {
+            int idx = rand.nextInt(chars.length());
+            sb.append(chars.charAt(idx));
+        }
+
+        return sb.toString();
+    }
+	
+	
+	
+	public static void main(String[] args) {
+
+		// 방법1
+		Student std1 = new Student("홍길동", 20);
+		Student std2 = new Student("이순신", 21);
+		Student std3 = new Student("강감찬", 22);
+		Student std4 = new Student("김효관", 23);
+		Student std5 = new Student("황원용", 24);
+
+		// 방법2 ArrayList
+
+		ArrayList<Student> myArrylist = new ArrayList<Student>();
+//		myArrylist.add(std1);
+
+		// 현재 : 고정문자열... 30개가 동일한 ABC
+		for (int i = 0; i < 30; i++) {
+
+			myArrylist.add(new Student(randomName(), 30 + i)); // 객체가 들어옴
+		} // for
+
+		System.out.println(myArrylist.get(0).getName());
+		System.out.println(myArrylist.get(0).getAge());
+
+		for (int i = 0; i < myArrylist.size(); i++) {
+
+			System.out.println(myArrylist.get(i).toString());
+		} // for
+
+		// toString()은 현재 객체의 고유값(해시)를 출력하고 있습니다.
+		// Student 객체의 성명과 나리를 출력하도록 코드를 수정하세요
+		for (int i = 0; i < myArrylist.size(); i++) {
+
+			System.out.println(+ ", " + myArrylist.get(i).getName()+" : "+myArrylist.get(i).getAge() );
+
+		} // for
+
+	}// main
+
+}// CollectionEx2

@@ -1,0 +1,31 @@
+package com.kopo.java_0424;
+
+class User {
+	String id;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public User(String id) {
+		super();
+		this.id = id;
+	}
+}
+
+public class HashCode {
+
+	public static void main(String[] args) {
+
+		
+		User a = new User("hfds123")
+		
+		
+		
+	}// main
+
+}// CLASS

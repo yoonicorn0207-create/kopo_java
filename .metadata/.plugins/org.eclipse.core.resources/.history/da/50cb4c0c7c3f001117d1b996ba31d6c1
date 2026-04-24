@@ -1,0 +1,66 @@
+package com.kopo.java_0424;
+
+import com.kopo.kangseo_0421.ready;
+
+class User {
+	String id;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public User(String id) {
+		super();
+		this.id = id;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) {
+			System.out.println("this == o");
+			return true;
+		}
+		
+		if (o instanceof User) {
+			System.out.println("o instanceof User");
+			return false;
+		}
+
+		
+		User user =(User) o;
+		return equals(id, user.id);
+		
+		
+		return false;
+	}
+
+}
+
+class Admin {
+	private String id;
+
+	public Admin(String id) {
+		super();
+		this.id = id;
+	}
+
+}
+
+public class HashCode {
+
+	public static void main(String[] args) {
+
+		User a = new User("hfds123");
+		User b = new User("knis123");
+		Admin c = new Admin("KCIA123");
+
+		System.out.println(a.equals(a));
+		System.out.println(a.getId());
+
+	}// main
+
+}// CLASS

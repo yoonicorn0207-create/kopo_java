@@ -1,0 +1,23 @@
+package com.kopo.java_0424;
+
+import java.io.BufferedReader;
+
+public class Stream1 {
+
+	public static void main(String[] args) {
+
+		
+		
+		
+		
+		
+		BufferedReader br = new BufferedReader(null)
+		
+		
+		
+		
+		
+		
+	}//main
+
+}//CLASS

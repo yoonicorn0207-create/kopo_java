@@ -1,0 +1,18 @@
+package com.kopo.kangseo_0421;
+
+import java.util.Arrays;
+
+public class IntergerEX {
+
+	public static void main(String[] args) {
+
+		int[] a = { 6, 4, 2, 6, 1 };
+		int temp = 0;
+		Arrays.sort(a);
+
+		
+		System.out.println(Arrays.toString(a));
+
+	}// main
+
+}// CLASS
