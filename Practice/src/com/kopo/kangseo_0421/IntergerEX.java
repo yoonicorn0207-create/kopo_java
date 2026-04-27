@@ -7,6 +7,7 @@ public class IntergerEX {
 
 	public static void main(String[] args) {
 
+		//순차정렬
 		int[] a = { 6, 4, 2, 6, 1 };
 		int[] newArry = new int[a.length];
 
@@ -14,6 +15,9 @@ public class IntergerEX {
 		Arrays.sort(a);
 
 		System.out.println(Arrays.toString(a));
+		
+		//역순정렬
+		
 		Integer[] b = { 6, 4, 2, 6, 1 };
 
 		Arrays.sort(b, Collections.reverseOrder()); // 역순정렬

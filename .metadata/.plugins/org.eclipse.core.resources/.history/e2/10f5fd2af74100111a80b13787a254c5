@@ -1,0 +1,18 @@
+package com.kopo.kangseo.java_0427;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class SortingEx4 {
+
+	public static void main(String[] args) {
+		Integer[] myArr = { 5, 3, 20, 1, 0, 100 };
+		Arrays.sort(myArr, (i, j) -> {
+			return j - i;
+		});// 람다식 활용
+
+		System.out.println(Arrays.toString(myArr));
+
+	}
+
+}

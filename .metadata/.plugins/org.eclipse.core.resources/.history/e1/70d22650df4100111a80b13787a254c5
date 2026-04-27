@@ -1,0 +1,37 @@
+package com.kopo.kangseo.java_0427;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class SortingEx1 {
+
+	public static void main(String[] args) {
+
+		Integer[] myArr = { 5, 3, 20, 1, 0, 100 };
+
+//		Arrays.sort(myArr, Collections.reverseOrder());
+
+		myCompareClass mcc = new myCompareClass();
+		Arrays.sort(myArr, mcc);
+
+		System.out.println(Arrays.toString(myArr));
+
+	}
+
+}// SortingEx1
+
+
+/*오름차순, 내림차순, 일반출력*/
+class myCompareClass implements Comparator<Integer> {
+
+	@Override
+	public int compare(Integer o1, Integer o2) { // 양수값이 나오면 순서를 바꾼다
+		
+		System.out.println("o1 : "+o1);
+		System.out.println(o2);
+		return o2 - o1; // 내림차순 정렬 //o1-o2 : 오름차순 정렬, 0 : 그대로 출력
+//		return Integer.compare(o2, o1);
+	}
+
+}// myCompareClass

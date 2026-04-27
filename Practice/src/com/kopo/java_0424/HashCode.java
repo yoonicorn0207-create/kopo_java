@@ -40,8 +40,7 @@ class User {
 
 	}
 
-}//@Override
-
+}// @Override
 
 class Admin {
 	private String id;

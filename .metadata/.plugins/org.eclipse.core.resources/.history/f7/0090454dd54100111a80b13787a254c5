@@ -1,0 +1,18 @@
+package com.kopo.kangseo.java_0427;
+
+public class SimpleServer {
+public static void main(String[] args) {
+// AutoCloseable 자원 관리
+try (ServerSocket server = new ServerSocket(8080);
+Socket client = server. accept();
+BufferedReader in = new BufferedReader(
+new InputStreamReader(client.getInputStream()))) {
+
+String msg = in.readLine();
+System.out.println("받은 메시지: " + msg);
+
+} catch (IOException e) {
+e.printStackTrace();
+}
+}
+}

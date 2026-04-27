@@ -1,0 +1,21 @@
+package com.kopo.kangseo.java_0427;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class GenericEx {
+
+	public static void main(String[] args) {
+
+		List<Object> arr = new ArrayList();
+		arr.add(1);
+
+		arr.add("abc");
+
+		System.out.println(arr.toString());
+
+		
+		
+	}// main
+
+}// CLASS

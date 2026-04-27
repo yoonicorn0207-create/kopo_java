@@ -1,0 +1,29 @@
+package com.kopo.kangseo.java_0427;
+
+class MyRunnable implements Runnable {
+
+	@Override
+	public void run() {
+		System.out.println("run");
+		
+	}
+	
+}
+
+public class ThreadEx2 {
+
+	public static void main(String[] args) {
+	
+		MyRunnable mr = new MyRunnable();
+		Thread t = new Thread(mr);
+		
+		t.start();
+
+	}
+
+	public static void increment() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
