@@ -10,7 +10,7 @@ abstract class airUnit {
 
 	public airUnit(String unit) {
 		this.unitName = unit;
-	}
+	} 
 
 // 공통 메서드
 
