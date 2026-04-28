@@ -1,7 +1,8 @@
 .metadata/
-.recommenders/
 bin/
-RemoteSystemsTempFiles/
-*.log
-*.class
-.lock_info
+tmp/
+*.tmp
+*.bak
+*.swp
+*~
+.loadpath
